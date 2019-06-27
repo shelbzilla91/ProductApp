@@ -1,5 +1,7 @@
 {
   "name": "productApp",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "node": "^12.4.0"
+  }
 }
