@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>LiftProgressTutorial</title>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <%= csrf_meta_tags %>
+<head>
+<title>RailsReactWebpacker</title>
+<%= csrf_meta_tags %>
 
-    
-  </head>
+<%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<!-- Following will make the react components availabe to our layout -->
+<%= javascript_pack_tag 'application' %>
+</head>
 
   <body>
     <%= yield %>
